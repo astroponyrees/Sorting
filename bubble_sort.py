@@ -1,8 +1,13 @@
 def bubble(data):
-    for j in range(0, len(data)):
+    has_swaped = True
+    while has_swaped:
+        has_swaped = False
         for i in range(0, len(data) - 1):
-            if data[i] >= data[i + 1]:
+            print(data)
+            if data[i] > data[i + 1]:
                 data[i], data[i + 1] = data[i + 1], data[i]
+                has_swaped = True
+            print(has_swaped)
     return data
 
 
