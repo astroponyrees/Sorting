@@ -1,15 +1,19 @@
 def bubble(data):
     has_swaped = True
+    count = 0
     while has_swaped:
         has_swaped = False
         for i in range(0, len(data) - 1):
-            print(data)
+            count += 1
             if data[i] > data[i + 1]:
                 data[i], data[i + 1] = data[i + 1], data[i]
                 has_swaped = True
-            print(has_swaped)
+    print(count)
     return data
 
 
-stuff = [4, 7, 3, 9, 10, 2, 1, 6, 5, 8, 1]
+stuff = [6, 5, 9, 10, 15, 4, 1, 3, 2, 7, 8, 6, 4]
 print(bubble(stuff))
+new_stuff = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+print(bubble(new_stuff))
+
