@@ -12,4 +12,5 @@ def insertion_sort(data):
     return data
 
 stuff = [6,3,9,1,2,8,4]
-print(more_stuff = insertion_sort(stuff))
+more_stuff = insertion_sort(stuff)
+print(more_stuff)
