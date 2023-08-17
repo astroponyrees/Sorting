@@ -2,12 +2,13 @@ def merge_sort(data):
     if len(data) == 1:
         return data
     else:
-        split = int(len(data)/2)
+        split = len(data)//2
         sub1 = merge_sort(data[:split])
         print(sub1)
         sub2 = merge_sort(data[split:])
         print(sub2)
         merged_n_sorted = merge(sub1,sub2)
+        print(merged_n_sorted)
         return merged_n_sorted
     
 def merge(data1,data2):
@@ -26,6 +27,6 @@ def merge(data1,data2):
     return sorted
 
 
-hot_mess = [5,2,7,6,9,1,4,3,8,10]
+hot_mess = [5,2,7,6,9,1,4,3,15,8,10]
 print(merge_sort(hot_mess))
 
