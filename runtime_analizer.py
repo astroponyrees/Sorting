@@ -17,25 +17,29 @@ def performance(function_name, data):
     return end_time - start_time
 
 
-
 for i in range(1,runs + 1):
     data_set = [random.randint(1,data_set_max_value)for _ in range(data_set_size)]
+    data_set_1 = data_set.copy()
+    data_set_2 = data_set.copy()
+    data_set_3 = data_set.copy()
+    data_set_4 = data_set.copy()
+    data_set_5 = data_set.copy()
     print("______________________________________")
     print(f"Run {i}:")
     # Bubble Sort Test  
-    print(f"Bubble Sort: {performance(bubble,data_set)}")
+    print(f"Bubble Sort: {performance(bubble,data_set_1)}")
 
     # Selection Sort Test
-    print(f"Selection Sort: {performance(selection,data_set)}")
+    print(f"Selection Sort: {performance(selection,data_set_2)}")
 
     # Insertion Sort Test
-    print(f"Insertion Sort: {performance(insertion_sort,data_set)}")
+    print(f"Insertion Sort: {performance(insertion_sort,data_set_3)}")
 
     # Merge Sort Test
-    print(f"Merge Sort: {performance(merge_sort,data_set)}")
+    print(f"Merge Sort: {performance(merge_sort,data_set_4)}")
 
     # Quick Sort Test
-    print(f"Quick Sort: {performance(quicksort,data_set)}")
+    print(f"Quick Sort: {performance(quicksort,data_set_5)}")
 
     # Python Native Sort Test
     start_time = time.perf_counter()
