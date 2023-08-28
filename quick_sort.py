@@ -23,5 +23,5 @@ def quicksort(data):
     return smaller + middle + larger
 
 
-stuff = [5, 6, 1, 3, 9, 10, 2, 7, 4, 2, 8, 1, 15, 45, 5, 6, 6, 11, 12]
-print(quicksort(stuff))
+#stuff = [5, 6, 1, 3, 9, 10, 2, 7, 4, 2, 8, 1, 15, 45, 5, 6, 6, 11, 12]
+#print(quicksort(stuff))
